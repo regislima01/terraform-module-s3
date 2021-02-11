@@ -10,6 +10,8 @@ We will work in different workspaces inside the terraform, a workspace for hourl
 
 You can create the three workspaces using the command :  terraform workspace new hourly, terraform workspace new daily and then terraform workspace new weekly.
 
+You need to execute **terraform init** in all workspaces.
+
 You can switch the workspaces using the command: terraform workspace select hourly / terraform workspace select daily / terraform workspace select weekly.
 
 When you inside the workspace hourly for example, you will execute the .tfvars with the same name of the workspace that you're inside in, for example, if you are in the workspace hourly, you must execute the command: terraform plan -var-file="hourly.tfvars" and then terraform apply -var-file="hourly.tfvars".  Did you get it?
