@@ -21,3 +21,29 @@ If you are in workspace daily, your command must be: **terraform plan -var-file=
 *This code you'll be improved in the future and I'll be added more functions.*
 
 
+These features of S3 bucket configurations are supported:
+
+- Versioning
+- Lifecycle rules
+- Server-side encryption
+- Attach Policy to your bucket
+- Bucket payer
+
+## Terraform versions
+
+Terraform 0.14 and above are supported.
+
+## Requirements
+
+| Name | Version |
+|------|---------|
+| terraform | >= 0.14 |
+| aws | >= 3.0 |
+
+## Providers
+
+| Name | Version |
+|------|---------|
+| aws | >= 3.0 |
+
+
