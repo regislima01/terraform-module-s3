@@ -4,7 +4,7 @@
 This Module will create tree s3 buckets. with reports hourly, daily, weekly.
 
 First of all, I made this module thinking that your **AWS CLI** is configurated locally in your machine (./aws/credentials).
-You can pass your Access key and the Secret key inside the code, but it's not secure.
+You can create a variable with your Access key and the Secret key and attach inside the code, but it's not secure.
 
 In this code, I used **terraform version 0.14**
 
@@ -70,8 +70,8 @@ Terraform 0.14 and above are supported.
 | acl | (Optional) The canned ACL to apply. Defaults to 'private'.| `string` | `"private"` | no |
 | attach\_policy | Controls if S3 bucket should have bucket policy attached (set to `true` to use value of `policy` as bucket policy) | `bool` | `true` | no |
 | attach\_public\_policy | Controls if a user defined public bucket policy will be attached (set to `false` to allow upstream to apply defaults to the bucket) | `bool` | `false` | no |
-| block\_public\_acls | Whether Amazon S3 should block public ACLs for this bucket. | `bool` | `false` | no |
-| block\_public\_policy | Whether Amazon S3 should block public bucket policies for this bucket. | `bool` | `false` | no |
+| block\_public\_acls | Whether Amazon S3 should block public ACLs for this bucket. | `bool` | `true` | no |
+| block\_public\_policy | Whether Amazon S3 should block public bucket policies for this bucket. | `bool` | `true` | no |
 | bucket_name | The name of the bucket. If omitted, Terraform will assign a random, unique name. | `string` | `null` | no |
 | bucket\_prefix | Creates a unique bucket name beginning with the specified prefix. Conflicts with bucket. | `string` | `null` | no |
 | enable_current_object_expiration | Enables the expiration of current objects. | `bool` | `true` | no |
