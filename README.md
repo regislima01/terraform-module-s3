@@ -14,6 +14,15 @@ You need to execute **terraform init** in all workspaces.
 
 You can switch the workspaces using the command: **terraform workspace select hourly** | **terraform workspace select daily** | **terraform workspace select weekly**.
 
+If you don't know what is your workspace that you are, you can run the command: **terraform workspace** list and you see something like:
+
+  default
+  hourly
+  daily
+* weekly
+
+the *** indicate in whats your workspace that you're in.
+
 When you inside the workspace hourly for example, you will execute the *.tfvars* with the **same name of the workspace that you're inside in**, for example, if you are in the workspace *hourly*, you must execute the command: **terraform plan -var-file="hourly.tfvars"** and then **terraform apply -var-file="hourly.tfvars"**.  *Did you get it?*
 
 AGAIN
