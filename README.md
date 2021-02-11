@@ -67,7 +67,6 @@ Terraform 0.14 and above are supported.
 | server\_side\_encryption\_configuration | Map containing server-side encryption configuration. | `any` | `{}` | no |
 | tags | (Optional) A mapping of tags to assign to the bucket. | `map(string)` | `{}` | no |
 | versioning | Map containing versioning configuration. | `map(string)` | `{}` | no |
-| website | Map containing static web-site hosting or redirect configuration. | `map(string)` | `{}` | no |
 
 
 ## License
