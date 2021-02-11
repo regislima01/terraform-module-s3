@@ -19,7 +19,7 @@ If you don't know what is your workspace that you are, you can run the command: 
   default <br />
   hourly <br />
   daily <br />
-<br /> * weekly <br />
+  * weekly <br />
 
 the * indicate in whats your workspace that you're in.
 
