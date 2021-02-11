@@ -23,13 +23,14 @@ If you don't know what is your workspace that you are, you can run the command: 
    daily
  <br /> * weekly <br />
 
-the * indicates in what's your workspace that you're in.
+the * indicates your workspace that you are currently in.
 
-When you inside the workspace hourly for example, you will execute the *.tfvars* with the **same name of the workspace that you're inside in**, for example, if you are in the workspace *hourly*, you must execute the command: **terraform plan -var-file="hourly.tfvars"** and then **terraform apply -var-file="hourly.tfvars"**.  *Did you get it?*
+When you get inside the workspace hourly for example, you will execute the *.tfvars* with the **same name of the workspace that you're currently inside in**, for example, if you are in the workspace *hourly*, you must execute the command: **terraform plan -var-file="hourly.tfvars"** and then **terraform apply -var-file="hourly.tfvars"**.  *Did you get it?*
 
 AGAIN
 
-If you are in workspace daily, your command must be: **terraform plan -var-file="daily.tfvars"** and then **terraform apply -var-file="daily.tfvars"**. *So that's it*.
+If you are inside workspace daily, your command must be: **terraform plan -var-file="daily.tfvars"** and then **terraform apply -var-file="daily.tfvars"**. 
+*So that's it*.
 
 **All parameters that you need to change is inside on hourly.tfvars, daily.tfvars and weekly.tfvars**
 
@@ -39,7 +40,7 @@ If you are in workspace daily, your command must be: **terraform plan -var-file=
 
 # Working with policies
 
-You will see a folder named **policies** inside that folder you find 3 JSON files: hourly.json, daily.json, and weekly.json, inside these files you can change or modify the policies for the more adequate way you want.
+You will see a folder named **policies**, inside that folder you find 3 JSON files: hourly.json, daily.json, and weekly.json, inside these files you can change or modify the policies for the more adequate way you want.
 
 ## Terraform versions
 
