@@ -16,10 +16,10 @@ You can switch the workspaces using the command: **terraform workspace select ho
 
 If you don't know what is your workspace that you are, you can run the command: **terraform workspace list** and you see something like:
 
-  default <br />
-  hourly <br />
-  daily
- <br /> * weekly <br />
+    default <br />
+  <br /> *  hourly <br />
+    daily
+    weekly <br />
 
 the * indicate in whats your workspace that you're in.
 
