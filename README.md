@@ -42,7 +42,7 @@ If you are inside workspace daily, your command must be: **terraform plan -var-f
 
 # Working with policies
 
-You will see a folder named **policies**, inside that folder you find 3 JSON files: hourly.json, daily.json, and weekly.json, inside these files you can change or modify the policies for the more adequate way you want.
+You will see a folder named **policies**, inside this folder you'll find 3 JSON files: hourly.json, daily.json, and weekly.json, inside these files you can change or modify the policies for the more adequate way you want.
 
 ## Terraform versions
 
