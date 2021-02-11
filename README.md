@@ -8,6 +8,8 @@ You can pass your Access key and the Secret key inside the code, but it's not se
 
 In this code, I used **terraform version 0.14**
 
+# Let's Start
+
 We will work in different workspaces inside the terraform, a workspace for **hourly**, **daily**, and **weekly**.
 
 You can create the three workspaces using the commands :  **terraform workspace new hourly**, **terraform workspace new daily** and then **terraform workspace new weekly**.
