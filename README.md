@@ -70,5 +70,5 @@ Terraform 0.14 and above are supported.
 
 ## License
 
-Apache 2 Licensed. See LICENSE for full details.
+GNU General Public License v3.0. See LICENSE for full details.
 
