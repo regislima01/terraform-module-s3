@@ -18,6 +18,8 @@ When you inside the workspace hourly for example, you will execute the *.tfvars*
 
 If you are in workspace daily, your command must be: **terraform plan -var-file="daily.tfvars"** and then **terraform apply -var-file="daily.tfvars"**. *So that's it*.
 
+**All parameters that you need to change is inside on hourly.tfvars, daily.tfvars and weekly.tfvars**
+
 *This code you'll be improved in the future and I'll be added more functions.*
 
 ## Terraform versions
