@@ -16,6 +16,8 @@ You can switch the workspaces using the command: **terraform workspace select ho
 
 When you inside the workspace hourly for example, you will execute the *.tfvars* with the **same name of the workspace that you're inside in**, for example, if you are in the workspace *hourly*, you must execute the command: **terraform plan -var-file="hourly.tfvars"** and then **terraform apply -var-file="hourly.tfvars"**.  *Did you get it?*
 
+AGAIN
+
 If you are in workspace daily, your command must be: **terraform plan -var-file="daily.tfvars"** and then **terraform apply -var-file="daily.tfvars"**. *So that's it*.
 
 **All parameters that you need to change is inside on hourly.tfvars, daily.tfvars and weekly.tfvars**
