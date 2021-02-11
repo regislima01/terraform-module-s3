@@ -42,7 +42,7 @@ Terraform 0.14 and above are supported.
 
 ## Inputs
 
-| Name | Description | Type | Default | Required |
+| Name Variable | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
 | acceleration\_status | (Optional) Sets the accelerate configuration of an existing bucket. Can be Enabled or Suspended. | `string` | `null` | no |
 | acl | (Optional) The canned ACL to apply. Defaults to 'private'. Conflicts with `grant` | `string` | `"private"` | no |
