@@ -14,12 +14,12 @@ You need to execute **terraform init** in all workspaces.
 
 You can switch the workspaces using the command: **terraform workspace select hourly** | **terraform workspace select daily** | **terraform workspace select weekly**.
 
-If you don't know what is your workspace that you are, you can run the command: **terraform workspace** list and you see something like:
+If you don't know what is your workspace that you are, you can run the command: **terraform workspace list** and you see something like:
 
   default <br />
   hourly <br />
-  daily <br />
-  * weekly <br />
+  daily
+ <br /> * weekly <br />
 
 the * indicate in whats your workspace that you're in.
 
