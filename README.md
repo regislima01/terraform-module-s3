@@ -1,7 +1,7 @@
 # terraform-module-s3
 This Module will create tree s3 buckets. with reports hourly, daily, weekly.
 
-First of all, I made this module thinking that your **AWS CLI version 2** is configurated locally in your machine (./aws/credentials).
+First of all, I made this module thinking that your **AWS CLI ** is configurated locally in your machine (./aws/credentials).
 You can pass your Access key and the Secret key inside the code, but it's not secure.
 
 In this code, I used **terraform version 0.14**
@@ -17,14 +17,6 @@ You can switch the workspaces using the command: **terraform workspace select ho
 When you inside the workspace hourly for example, you will execute the *.tfvars* with the **same name of the workspace that you're inside in**, for example, if you are in the workspace *hourly*, you must execute the command: **terraform plan -var-file="hourly.tfvars"** and then **terraform apply -var-file="hourly.tfvars"**.  *Did you get it?*
 
 If you are in workspace daily, your command must be: **terraform plan -var-file="daily.tfvars"** and then **terraform apply -var-file="daily.tfvars"**. *So that's it*.
-
-These features of S3 bucket configurations are supported:
-
-- Versioning
-- Lifecycle rules
-- Server-side encryption
-- Attach Policy to your bucket
-- Bucket payer
 
 *This code you'll be improved in the future and I'll be added more functions.*
 
@@ -52,7 +44,6 @@ Terraform 0.14 and above are supported.
 |------|-------------|------|---------|:--------:|
 | acceleration\_status | (Optional) Sets the accelerate configuration of an existing bucket. Can be Enabled or Suspended. | `string` | `null` | no |
 | acl | (Optional) The canned ACL to apply. Defaults to 'private'. Conflicts with `grant` | `string` | `"private"` | no |
-| attach\_elb\_log\_delivery\_policy | Controls if S3 bucket should have ELB log delivery policy attached | `bool` | `false` | no |
 | attach\_policy | Controls if S3 bucket should have bucket policy attached (set to `true` to use value of `policy` as bucket policy) | `bool` | `false` | no |
 | attach\_public\_policy | Controls if a user defined public bucket policy will be attached (set to `false` to allow upstream to apply defaults to the bucket) | `bool` | `true` | no |
 | block\_public\_acls | Whether Amazon S3 should block public ACLs for this bucket. | `bool` | `false` | no |
