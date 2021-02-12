@@ -1,7 +1,11 @@
-# terraform-module-s3
+# terraform-module-s3.beta
 # Before you start anything
 
-This Module will create tree s3 buckets. with reports hourly, daily, weekly.
+Module will create tree s3 buckets. with reports hourly, daily, weekly.
+
+**This is the "hard way" to create these buckets, but it works, after I've made this module I found another way much easier to do the same thing with the "for_each".**
+
+**I'll leave this module here as a study case, you can go to another repository here in my GitHub and look for *terraform-s3-module*.**
 
 First of all, I made this module thinking that your **AWS CLI** is configurated locally in your machine (./aws/credentials).
 You can create a variable with your Access key and the Secret key and attach inside the code, but it's not secure.
